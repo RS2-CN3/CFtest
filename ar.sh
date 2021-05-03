@@ -39,5 +39,5 @@ echo 'grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck' | ar
 echo 'mkdir /boot/grub/locale' | arch-chroot /mnt
 echo 'cp /usr/share/locale/en\@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo' | arch-chroot /mnt
 echo 'grub-mkconfig -o /boot/grub/grub.cfg' | arch-chroot /mnt
-echo 'pacman -S intel-ucode xorg-server xfce4 xfce4-goodies lightdm lightdm-gtk-greeter git sddm konsole --noconfirm' | arch-chroot /mnt
+echo 'pacman -S intel-ucode xorg-server xfce4 xfce4-goodies lightdm lightdm-gtk-greeter git xfce4-terminal --noconfirm' | arch-chroot /mnt
 echo 'systemctl enable lightdm' | arch-chroot /mnt
