@@ -30,8 +30,8 @@ echo 'locale-gen' | arch-chroot /mnt
 echo 'passwd
 1051
 1051' | arch-chroot /mnt
-echo 'useradd -m -g users -G wheel ujjwal' | arch-chroot /mnt
-echo 'passwd ujjwal
+echo 'useradd -m -g users -G wheel sushant' | arch-chroot /mnt
+echo 'passwd sushant
 1051
 1051' | arch-chroot /mnt
 echo 'sed -i '85s/.//' /etc/sudoers' | arch-chroot /mnt
