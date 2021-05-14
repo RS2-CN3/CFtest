@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+reflector --country China --age 24 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+
+pacman -Sy
+
 wipefs -a -f /dev/sda
 echo 'mklabel gpt
 mkpart "EFI" fat32 1MiB 512MiB
